@@ -1,5 +1,5 @@
 //
-//  SerialOperationCoordinator.swift
+//  ConcurrentOperationCoordinator.swift
 //  Demo_Async
 //
 //  Created by Daniel Saidi on 2019-01-29.
@@ -9,22 +9,22 @@
 /*
  
  This class implements `OperationCoordinator` as well as the
- `SerialItemOperation` protocol.
+ `ConcurrentItemOperation` protocol.
  
- This coordinator performs a set of operations in serial. It
- can be used either directly or as an internal tool in other
+ This coordinator performs operations concurrently. It could
+ be used either directly or as an internal tool in any other
  classes, e.g. data syncers, to hide the "operation" concept
  from their external apis.
  
  */
 
-public class SerialOperationCoordinator: OperationCoordinator, SerialItemOperation {
+public class ImprovedConcurrentOperationCoordinator: OperationCoordinator, ConcurrentItemOperation {
     
     public init() {}
     
     public typealias CollectionType = Operation
     
-    public func perform(operations: [Operation], completion: @escaping Completion) {
+    public func perform(_ operations: [Operation], completion: @escaping Completion) {
         perform(on: operations, completion: completion)
     }
     

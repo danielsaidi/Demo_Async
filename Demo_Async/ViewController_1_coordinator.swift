@@ -12,7 +12,7 @@ extension ViewController {
     
     func performOperation_coordinator() {
         let operations = DemoOperation.create(5, for: self)
-        let coordinator = ConcurrentOperationCoordinator_old() // SerialOperationCoordinator()
+        let coordinator = ConcurrentOperationCoordinator_old() // SerialOperationCoordinator_old()
         coordinator.perform(operations) { [weak self] errors in
             let errors = errors.compactMap { $0 }
             self?.textView.text += "Finished with \(errors.count) errors"

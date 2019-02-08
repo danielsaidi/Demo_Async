@@ -18,9 +18,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func performOperation(_ sender: Any) {
-        performOperation_coordinator()
-        performOperation_items()
-        performOperation_batches()
-        performOperation_coordinator_improved()
+//        performOperation_coordinator()
+//        performOperation_items()
+//        performOperation_batches()
+//        performOperation_coordinator_improved()
     }
 }

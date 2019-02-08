@@ -14,11 +14,11 @@ class ConcurrentOperationCoordinatorTests: QuickSpec {
     
     override func spec() {
         
-        var coordinator: ConcurrentOperationCoordinator!
+        var coordinator: ConcurrentOperationCoordinator_old!
         var counter: TestCounter!
         
         beforeEach {
-            coordinator = ConcurrentOperationCoordinator()
+            coordinator = ConcurrentOperationCoordinator_old()
             counter = TestCounter()
         }
         

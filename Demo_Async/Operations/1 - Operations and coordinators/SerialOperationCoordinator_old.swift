@@ -1,5 +1,5 @@
 //
-//  SerialOperationCoordinator.swift
+//  SerialOperationCoordinator_old.swift
 //  Demo_Async
 //
 //  Created by Daniel Saidi on 2019-01-29.
@@ -18,7 +18,7 @@
  
  */
 
-class SerialOperationCoordinator: OperationCoordinator {
+class SerialOperationCoordinator_old: OperationCoordinator {
     
     func perform(_ operations: [Operation], completion: @escaping Completion) {
         performOperation(at: 0, in: operations, errors: [], completion: completion)

@@ -14,11 +14,11 @@ class SerialOperationCoordinatorTests: QuickSpec {
     
     override func spec() {
         
-        var coordinator: SerialOperationCoordinator!
+        var coordinator: SerialOperationCoordinator_old!
         var counter: TestCounter!
         
         beforeEach {
-            coordinator = SerialOperationCoordinator()
+            coordinator = SerialOperationCoordinator_old()
             counter = TestCounter()
         }
         

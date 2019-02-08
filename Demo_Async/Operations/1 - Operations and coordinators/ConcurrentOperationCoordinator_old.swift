@@ -1,5 +1,5 @@
 //
-//  ConcurrentOperationCoordinator.swift
+//  ConcurrentOperationCoordinator_old.swift
 //  Demo_Async
 //
 //  Created by Daniel Saidi on 2019-01-29.
@@ -18,7 +18,7 @@
  
  */
 
-class ConcurrentOperationCoordinator: OperationCoordinator {
+class ConcurrentOperationCoordinator_old: OperationCoordinator {
     
     func perform(_ operations: [Operation], completion: @escaping Completion) {
         guard operations.count > 0 else { return completion([]) }

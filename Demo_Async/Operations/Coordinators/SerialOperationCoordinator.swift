@@ -18,7 +18,7 @@
  
  */
 
-class SerialOperationCoordinator_old: OperationCoordinator {
+class SerialOperationCoordinator: OperationCoordinator {
     
     func perform(_ operations: [Operation], completion: @escaping Completion) {
         performOperation(at: 0, in: operations, errors: [], completion: completion)
@@ -33,3 +33,32 @@ class SerialOperationCoordinator_old: OperationCoordinator {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//class SerialOperationCoordinator: OperationCoordinator, SerialItemOperation {
+//
+//    init() {}
+//
+//    typealias CollectionType = Operation
+//
+//    func perform(_ operations: [Operation], completion: @escaping Completion) {
+//        perform(on: operations, completion: completion)
+//    }
+//
+//    func perform(onItem item: Operation, completion: @escaping ItemCompletion) {
+//        item.perform(completion: completion)
+//    }
+//}

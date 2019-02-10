@@ -15,7 +15,7 @@
 
 import Foundation
 
-public protocol OperationCoordinator {
+protocol OperationCoordinator {
     
     typealias Completion = ([Error?]) -> ()
     

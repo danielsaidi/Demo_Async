@@ -18,7 +18,7 @@
  
  */
 
-class ConcurrentOperationCoordinator_old: OperationCoordinator {
+class ConcurrentOperationCoordinator: OperationCoordinator {
     
     func perform(_ operations: [Operation], completion: @escaping Completion) {
         guard operations.count > 0 else { return completion([]) }
@@ -33,3 +33,35 @@ class ConcurrentOperationCoordinator_old: OperationCoordinator {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//class ConcurrentOperationCoordinator: OperationCoordinator, ConcurrentItemOperation {
+//    
+//    init() {}
+//    
+//    typealias CollectionType = Operation
+//    
+//    func perform(_ operations: [Operation], completion: @escaping Completion) {
+//        perform(on: operations, completion: completion)
+//    }
+//    
+//    func perform(onItem item: Operation, completion: @escaping ItemCompletion) {
+//        item.perform(completion: completion)
+//    }
+//}

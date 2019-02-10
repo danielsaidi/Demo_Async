@@ -16,7 +16,7 @@ class DemoOperation: Operation {
     }
     
     public static func create(_ count: Int, for vc: ViewController) -> [DemoOperation] {
-        return (0..<count).map { DemoOperation(id: $0, vc: vc) }
+        return (1...count).map { DemoOperation(id: $0, vc: vc) }
     }
     
     

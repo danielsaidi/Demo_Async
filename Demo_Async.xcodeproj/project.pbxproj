@@ -41,7 +41,6 @@
 		84F745AB220D4CFE002B8A79 /* ViewController_1_coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F745AA220D4CFE002B8A79 /* ViewController_1_coordinator.swift */; };
 		84F745AD220D4E27002B8A79 /* ViewController_2_items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F745AC220D4E27002B8A79 /* ViewController_2_items.swift */; };
 		84F745AF220D5033002B8A79 /* ViewController_3_batches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F745AE220D5032002B8A79 /* ViewController_3_batches.swift */; };
-		84F745B1220D509A002B8A79 /* ViewController_4_coordinator_improved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F745B0220D509A002B8A79 /* ViewController_4_coordinator_improved.swift */; };
 		84F745B3220D50CE002B8A79 /* DemoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F745B2220D50CE002B8A79 /* DemoOperation.swift */; };
 		84F745B5220D5161002B8A79 /* DemoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F745B4220D5161002B8A79 /* DemoItem.swift */; };
 		84F745B7220D5224002B8A79 /* SerialOperationCoordinator_old.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F745B6220D5224002B8A79 /* SerialOperationCoordinator_old.swift */; };
@@ -108,7 +107,6 @@
 		84F745AA220D4CFE002B8A79 /* ViewController_1_coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_1_coordinator.swift; sourceTree = "<group>"; };
 		84F745AC220D4E27002B8A79 /* ViewController_2_items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_2_items.swift; sourceTree = "<group>"; };
 		84F745AE220D5032002B8A79 /* ViewController_3_batches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_3_batches.swift; sourceTree = "<group>"; };
-		84F745B0220D509A002B8A79 /* ViewController_4_coordinator_improved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_4_coordinator_improved.swift; sourceTree = "<group>"; };
 		84F745B2220D50CE002B8A79 /* DemoOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoOperation.swift; sourceTree = "<group>"; };
 		84F745B4220D5161002B8A79 /* DemoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoItem.swift; sourceTree = "<group>"; };
 		84F745B6220D5224002B8A79 /* SerialOperationCoordinator_old.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialOperationCoordinator_old.swift; sourceTree = "<group>"; };
@@ -167,7 +165,6 @@
 				84F745AA220D4CFE002B8A79 /* ViewController_1_coordinator.swift */,
 				84F745AC220D4E27002B8A79 /* ViewController_2_items.swift */,
 				84F745AE220D5032002B8A79 /* ViewController_3_batches.swift */,
-				84F745B0220D509A002B8A79 /* ViewController_4_coordinator_improved.swift */,
 			);
 			path = Demo_Async;
 			sourceTree = "<group>";
@@ -387,7 +384,6 @@
 				84F74579220AB285002B8A79 /* CollectionOperation.swift in Sources */,
 				84F74578220AB285002B8A79 /* ConcurrentOperationCoordinator_old.swift in Sources */,
 				84F7457B220AB285002B8A79 /* SerialBatchOperation.swift in Sources */,
-				84F745B1220D509A002B8A79 /* ViewController_4_coordinator_improved.swift in Sources */,
 				84F745AB220D4CFE002B8A79 /* ViewController_1_coordinator.swift in Sources */,
 				84F745A8220C94FD002B8A79 /* ConcurrentOperationCoordinator.swift in Sources */,
 				84F745B3220D50CE002B8A79 /* DemoOperation.swift in Sources */,

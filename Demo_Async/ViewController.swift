@@ -22,6 +22,9 @@ class ViewController: UIViewController {
 //        performOperation_coordinator()
 //        performOperation_items()
 //        performOperation_batches()
-//        performOperation_coordinator_improved()
+    }
+    
+    func print(_ text: String) {
+        textView.text += "\(text)\n"
     }
 }

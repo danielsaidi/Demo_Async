@@ -10,11 +10,14 @@ import UIKit
 
 class DemoBatchOperation: DemoOperation, ConcurrentBatchOperation /*SerialBatchOperation*/ {
     
+    init(vc: ViewController) {
+        super.init(name: "Batch Operation", vc: vc)
+    }
+    
     var batchSize: Int = 2
     typealias CollectionType = DemoItem
     
     func perform(onBatch batch: [DemoItem], completion: @escaping BatchCompletion) {
-        // Sync in some way, here just perform the same as before
         perform { (error) in
             completion(error)
         }

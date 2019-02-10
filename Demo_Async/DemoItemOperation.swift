@@ -10,10 +10,13 @@ import Foundation
 
 class DemoItemOperation: DemoOperation, ConcurrentItemOperation /*SerialItemOperation*/ {
     
+    init(vc: ViewController) {
+        super.init(name: "Item Operation", vc: vc)
+    }
+    
     typealias CollectionType = DemoItem
     
     func perform(onItem item: DemoItem, completion: @escaping ItemCompletion) {
-        // Sync in some way, here just perform the same as before
         perform { (error) in
             completion(error)
         }

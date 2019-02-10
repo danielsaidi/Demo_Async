@@ -11,24 +11,11 @@ import UIKit
 extension ViewController {
     
     func performOperation_items() {
-        let items = DemoSyncItem.create(5)
+        let items = DemoItem.create(5)
         let operation = DemoItemOperation(vc: self)
         operation.perform(on: items) { [weak self] errors in
             let errors = errors.compactMap { $0 }
             self?.textView.text += "Finished with \(errors.count) errors"
-        }
-    }
-}
-
-
-private class DemoItemOperation: DemoOperation, ConcurrentItemOperation /*SerialItemOperation*/ {
-    
-    typealias CollectionType = DemoSyncItem
-    
-    func perform(onItem item: DemoSyncItem, completion: @escaping ItemCompletion) {
-        // Sync in some way, here just perform the same as before
-        perform { (error) in
-            completion(error)
         }
     }
 }

@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func performOperation(_ sender: Any) {
+        textView.text = ""
 //        performOperation_coordinator()
 //        performOperation_items()
 //        performOperation_batches()

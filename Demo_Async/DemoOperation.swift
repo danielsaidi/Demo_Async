@@ -6,7 +6,7 @@
 //  Copyright © 2019 Daniel Saidi. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 class DemoOperation: Operation {
     

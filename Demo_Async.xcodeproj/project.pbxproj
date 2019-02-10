@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840B666B2210266800F282F2 /* DemoItemOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B666A2210266800F282F2 /* DemoItemOperation.swift */; };
+		840B666D221026C700F282F2 /* DemoBatchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B666C221026C700F282F2 /* DemoBatchOperation.swift */; };
 		84F7454C220AB236002B8A79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7454B220AB236002B8A79 /* AppDelegate.swift */; };
 		84F7454E220AB236002B8A79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7454D220AB236002B8A79 /* ViewController.swift */; };
 		84F74551220AB236002B8A79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F7454F220AB236002B8A79 /* Main.storyboard */; };
@@ -41,7 +43,7 @@
 		84F745AF220D5033002B8A79 /* ViewController_3_batches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F745AE220D5032002B8A79 /* ViewController_3_batches.swift */; };
 		84F745B1220D509A002B8A79 /* ViewController_4_coordinator_improved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F745B0220D509A002B8A79 /* ViewController_4_coordinator_improved.swift */; };
 		84F745B3220D50CE002B8A79 /* DemoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F745B2220D50CE002B8A79 /* DemoOperation.swift */; };
-		84F745B5220D5161002B8A79 /* DemoSyncItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F745B4220D5161002B8A79 /* DemoSyncItem.swift */; };
+		84F745B5220D5161002B8A79 /* DemoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F745B4220D5161002B8A79 /* DemoItem.swift */; };
 		84F745B7220D5224002B8A79 /* SerialOperationCoordinator_old.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F745B6220D5224002B8A79 /* SerialOperationCoordinator_old.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		840B666A2210266800F282F2 /* DemoItemOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoItemOperation.swift; sourceTree = "<group>"; };
+		840B666C221026C700F282F2 /* DemoBatchOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoBatchOperation.swift; sourceTree = "<group>"; };
 		84F74548220AB236002B8A79 /* Demo_Async.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo_Async.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F7454B220AB236002B8A79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84F7454D220AB236002B8A79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,7 +110,7 @@
 		84F745AE220D5032002B8A79 /* ViewController_3_batches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_3_batches.swift; sourceTree = "<group>"; };
 		84F745B0220D509A002B8A79 /* ViewController_4_coordinator_improved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_4_coordinator_improved.swift; sourceTree = "<group>"; };
 		84F745B2220D50CE002B8A79 /* DemoOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoOperation.swift; sourceTree = "<group>"; };
-		84F745B4220D5161002B8A79 /* DemoSyncItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSyncItem.swift; sourceTree = "<group>"; };
+		84F745B4220D5161002B8A79 /* DemoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoItem.swift; sourceTree = "<group>"; };
 		84F745B6220D5224002B8A79 /* SerialOperationCoordinator_old.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialOperationCoordinator_old.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,7 +160,9 @@
 				84F7456B220AB24B002B8A79 /* Operations */,
 				84F745A0220AB5FA002B8A79 /* Supporting Files */,
 				84F745B2220D50CE002B8A79 /* DemoOperation.swift */,
-				84F745B4220D5161002B8A79 /* DemoSyncItem.swift */,
+				84F745B4220D5161002B8A79 /* DemoItem.swift */,
+				840B666A2210266800F282F2 /* DemoItemOperation.swift */,
+				840B666C221026C700F282F2 /* DemoBatchOperation.swift */,
 				84F7454D220AB236002B8A79 /* ViewController.swift */,
 				84F745AA220D4CFE002B8A79 /* ViewController_1_coordinator.swift */,
 				84F745AC220D4E27002B8A79 /* ViewController_2_items.swift */,
@@ -375,6 +381,7 @@
 				84F74577220AB285002B8A79 /* SerialItemOperation.swift in Sources */,
 				84F7454E220AB236002B8A79 /* ViewController.swift in Sources */,
 				84F7454C220AB236002B8A79 /* AppDelegate.swift in Sources */,
+				840B666D221026C700F282F2 /* DemoBatchOperation.swift in Sources */,
 				84F745AD220D4E27002B8A79 /* ViewController_2_items.swift in Sources */,
 				84F745B7220D5224002B8A79 /* SerialOperationCoordinator_old.swift in Sources */,
 				84F74579220AB285002B8A79 /* CollectionOperation.swift in Sources */,
@@ -386,7 +393,8 @@
 				84F745B3220D50CE002B8A79 /* DemoOperation.swift in Sources */,
 				84F7457F220AB285002B8A79 /* ItemOperation.swift in Sources */,
 				84F7457E220AB285002B8A79 /* ConcurrentItemOperation.swift in Sources */,
-				84F745B5220D5161002B8A79 /* DemoSyncItem.swift in Sources */,
+				840B666B2210266800F282F2 /* DemoItemOperation.swift in Sources */,
+				84F745B5220D5161002B8A79 /* DemoItem.swift in Sources */,
 				84F745AF220D5033002B8A79 /* ViewController_3_batches.swift in Sources */,
 				84F7457A220AB285002B8A79 /* ConcurrentBatchOperation.swift in Sources */,
 				84F7457D220AB285002B8A79 /* BatchOperation.swift in Sources */,

@@ -27,7 +27,7 @@ class DemoOperation: Operation {
     func perform(completion: @escaping Completion) {
         vc?.print("Performing \(name)")
         DispatchQueue.global(qos: .background).async {
-            sleep(1)
+            usleep(UInt32.random(in: 800_000...1_200_000))
             DispatchQueue.main.async {
                 completion(nil)
             }

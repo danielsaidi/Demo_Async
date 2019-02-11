@@ -29,6 +29,7 @@ class DemoOperation: Operation {
         DispatchQueue.global(qos: .background).async {
             usleep(UInt32.random(in: 800_000...1_200_000))
             DispatchQueue.main.async {
+                self.vc?.print("Finished \(self.name)")
                 completion(nil)
             }
         }

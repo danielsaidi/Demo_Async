@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, Printer {
     
     @IBOutlet weak var textView: UITextView! {
         didSet {
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     }
     
     func createOperations(_ count: Int) -> [DemoOperation] {
-        return (1...count).map { DemoOperation(name: "Operation \($0)", vc: self) }
+        return (1...count).map { DemoOperation(name: "Operation \($0)", printer: self) }
     }
     
     func print(_ text: String) {

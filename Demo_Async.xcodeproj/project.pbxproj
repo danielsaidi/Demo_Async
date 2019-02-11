@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		840B666B2210266800F282F2 /* DemoItemOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B666A2210266800F282F2 /* DemoItemOperation.swift */; };
 		840B666D221026C700F282F2 /* DemoBatchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B666C221026C700F282F2 /* DemoBatchOperation.swift */; };
+		840B667722117FA700F282F2 /* Printer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B667622117FA700F282F2 /* Printer.swift */; };
 		84F7454C220AB236002B8A79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7454B220AB236002B8A79 /* AppDelegate.swift */; };
 		84F7454E220AB236002B8A79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7454D220AB236002B8A79 /* ViewController.swift */; };
 		84F74551220AB236002B8A79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F7454F220AB236002B8A79 /* Main.storyboard */; };
@@ -71,6 +72,7 @@
 /* Begin PBXFileReference section */
 		840B666A2210266800F282F2 /* DemoItemOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoItemOperation.swift; sourceTree = "<group>"; };
 		840B666C221026C700F282F2 /* DemoBatchOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoBatchOperation.swift; sourceTree = "<group>"; };
+		840B667622117FA700F282F2 /* Printer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Printer.swift; sourceTree = "<group>"; };
 		84F74548220AB236002B8A79 /* Demo_Async.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo_Async.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F7454B220AB236002B8A79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84F7454D220AB236002B8A79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				84F745B4220D5161002B8A79 /* DemoItem.swift */,
 				840B666A2210266800F282F2 /* DemoItemOperation.swift */,
 				840B666C221026C700F282F2 /* DemoBatchOperation.swift */,
+				840B667622117FA700F282F2 /* Printer.swift */,
 				84F7454D220AB236002B8A79 /* ViewController.swift */,
 				84F745AA220D4CFE002B8A79 /* ViewController_1_coordinator.swift */,
 				84F745AC220D4E27002B8A79 /* ViewController_2_items.swift */,
@@ -373,6 +376,7 @@
 				84F7454E220AB236002B8A79 /* ViewController.swift in Sources */,
 				84F7454C220AB236002B8A79 /* AppDelegate.swift in Sources */,
 				840B666D221026C700F282F2 /* DemoBatchOperation.swift in Sources */,
+				840B667722117FA700F282F2 /* Printer.swift in Sources */,
 				84F745AD220D4E27002B8A79 /* ViewController_2_items.swift in Sources */,
 				84F745B7220D5224002B8A79 /* SerialOperationCoordinator.swift in Sources */,
 				84F74579220AB285002B8A79 /* CollectionOperation.swift in Sources */,

@@ -10,8 +10,8 @@ import UIKit
 
 class DemoBatchOperation: DemoOperation, ConcurrentBatchOperation /*SerialBatchOperation*/ {
     
-    init(vc: ViewController) {
-        super.init(name: "Batch Operation", vc: vc)
+    init(printer: Printer) {
+        super.init(name: "Batch Operation", printer: printer)
     }
     
     var batchSize: Int = 2

@@ -10,20 +10,20 @@ import Foundation
 
 class DemoOperation: Operation {
     
-    init(name: String, vc: ViewController) {
+    init(name: String, printer: Printer) {
         self.name = name
-        self.vc = vc
+        self.printer = printer
     }
     
     private var name: String
-    private weak var vc: ViewController?
+    private weak var printer: Printer?
     
     func perform(completion: @escaping Completion) {
-        vc?.print("Performing \(name)")
+        printer?.print("Performing \(name)")
         DispatchQueue.global(qos: .background).async {
             usleep(UInt32.random(in: 800_000...1_200_000))
             DispatchQueue.main.async {
-                self.vc?.print("Finished \(self.name)")
+                self.printer?.print("Finished \(self.name)")
                 completion(nil)
             }
         }

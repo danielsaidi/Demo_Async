@@ -10,8 +10,8 @@ import Foundation
 
 class DemoItemOperation: DemoOperation, ConcurrentItemOperation /*SerialItemOperation*/ {
     
-    init(vc: ViewController) {
-        super.init(name: "Item Operation", vc: vc)
+    init(printer: Printer) {
+        super.init(name: "Item Operation", printer: printer)
     }
     
     typealias CollectionType = DemoItem

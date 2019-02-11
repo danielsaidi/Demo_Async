@@ -24,6 +24,15 @@ class ViewController: UIViewController {
 //        performOperation_batches()
     }
     
+    
+    func createItems(_ count: Int) -> [DemoItem] {
+        return (1...count).map {  DemoItem(id: $0) }
+    }
+    
+    func createOperations(_ count: Int) -> [DemoOperation] {
+        return (1...count).map { DemoOperation(name: "Operation \($0)", vc: self) }
+    }
+    
     func print(_ text: String) {
         textView.text += "\(text)\n"
     }

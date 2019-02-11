@@ -15,12 +15,6 @@ class DemoOperation: Operation {
         self.vc = vc
     }
     
-    public static func create(_ count: Int, vc: ViewController) -> [DemoOperation] {
-        return (1...count).map {
-            DemoOperation(name: "Operation \($0)", vc: vc)
-        }
-    }
-    
     private var name: String
     private weak var vc: ViewController?
     

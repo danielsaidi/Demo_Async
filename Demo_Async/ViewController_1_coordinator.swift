@@ -11,7 +11,7 @@ import UIKit
 extension ViewController {
     
     func performOperation_coordinator() {
-        let operations = DemoOperation.create(5, vc: self)
+        let operations = createOperations(5)
         let coordinator = ConcurrentOperationCoordinator() // SerialOperationCoordinator()
         coordinator.perform(operations) { [weak self] errors in
             let errors = errors.compactMap { $0 }

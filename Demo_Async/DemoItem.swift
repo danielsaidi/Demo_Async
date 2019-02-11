@@ -10,9 +10,5 @@ import Foundation
 
 struct DemoItem {
     
-    static func create(_ count: Int) -> [DemoItem] {
-        return (0..<count).map {  DemoItem(id: $0) }
-    }
-    
     let id: Int
 }

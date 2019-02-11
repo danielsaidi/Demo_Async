@@ -11,7 +11,7 @@ import UIKit
 extension ViewController {
     
     func performOperation_items() {
-        let items = DemoItem.create(5)
+        let items = createItems(5)
         let operation = DemoItemOperation(vc: self)
         operation.perform(on: items) { [weak self] errors in
             let errors = errors.compactMap { $0 }

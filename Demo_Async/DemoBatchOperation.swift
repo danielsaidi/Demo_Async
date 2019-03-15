@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DemoBatchOperation: DemoOperation, ConcurrentBatchOperation /*SerialBatchOperation*/ {
+class DemoBatchOperation: DemoOperation, SerialBatchOperation {
     
     init(printer: Printer) {
         super.init(name: "Batch Operation", printer: printer)

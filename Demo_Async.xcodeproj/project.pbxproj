@@ -130,16 +130,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		840B666E221034A400F282F2 /* Batch Operations */ = {
-			isa = PBXGroup;
-			children = (
-				84F74572220AB285002B8A79 /* BatchOperation.swift */,
-				84F7456F220AB285002B8A79 /* ConcurrentBatchOperation.swift */,
-				84F74570220AB285002B8A79 /* SerialBatchOperation.swift */,
-			);
-			path = "Batch Operations";
-			sourceTree = "<group>";
-		};
 		84F7453F220AB236002B8A79 = {
 			isa = PBXGroup;
 			children = (
@@ -191,11 +181,17 @@
 		84F7456B220AB24B002B8A79 /* Operations */ = {
 			isa = PBXGroup;
 			children = (
-				84F74575220AB285002B8A79 /* Operation.swift */,
+				84F74572220AB285002B8A79 /* BatchOperation.swift */,
 				84F7456E220AB285002B8A79 /* CollectionOperation.swift */,
-				84F745A2220C9450002B8A79 /* Coordinators */,
-				84F745A3220C94C5002B8A79 /* Item Operations */,
-				840B666E221034A400F282F2 /* Batch Operations */,
+				84F7456F220AB285002B8A79 /* ConcurrentBatchOperation.swift */,
+				84F74573220AB285002B8A79 /* ConcurrentItemOperation.swift */,
+				84F7456D220AB284002B8A79 /* ConcurrentOperationCoordinator.swift */,
+				84F74574220AB285002B8A79 /* ItemOperation.swift */,
+				84F74575220AB285002B8A79 /* Operation.swift */,
+				84F74576220AB285002B8A79 /* OperationCoordinator.swift */,
+				84F74570220AB285002B8A79 /* SerialBatchOperation.swift */,
+				84F7456C220AB284002B8A79 /* SerialItemOperation.swift */,
+				84F745B6220D5224002B8A79 /* SerialOperationCoordinator.swift */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -248,26 +244,6 @@
 				84F74557220AB237002B8A79 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		84F745A2220C9450002B8A79 /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-				84F74576220AB285002B8A79 /* OperationCoordinator.swift */,
-				84F7456D220AB284002B8A79 /* ConcurrentOperationCoordinator.swift */,
-				84F745B6220D5224002B8A79 /* SerialOperationCoordinator.swift */,
-			);
-			path = Coordinators;
-			sourceTree = "<group>";
-		};
-		84F745A3220C94C5002B8A79 /* Item Operations */ = {
-			isa = PBXGroup;
-			children = (
-				84F74574220AB285002B8A79 /* ItemOperation.swift */,
-				84F74573220AB285002B8A79 /* ConcurrentItemOperation.swift */,
-				84F7456C220AB284002B8A79 /* SerialItemOperation.swift */,
-			);
-			path = "Item Operations";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class DemoItemOperation: DemoOperation, ConcurrentItemOperation /*SerialItemOperation*/ {
+class DemoItemOperation: DemoOperation, SerialItemOperation {
     
     init(printer: Printer) {
         super.init(name: "Item Operation", printer: printer)

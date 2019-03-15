@@ -17,7 +17,7 @@ import Foundation
 
 protocol OperationCoordinator {
     
-    typealias Completion = ([Error?]) -> ()
+    typealias Completion = ([Error]) -> ()
     
     func perform(_ operations: [Operation], completion: @escaping Completion)
 }

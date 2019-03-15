@@ -30,7 +30,7 @@ public extension ConcurrentItemOperation {
                 errors.append(error)
                 let isComplete = errors.count == collection.count
                 guard isComplete else { return }
-                completion(errors)
+                completion(errors.compactMap { $0 })
             }
         }
     }

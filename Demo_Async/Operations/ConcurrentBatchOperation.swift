@@ -31,7 +31,7 @@ public extension ConcurrentBatchOperation {
                 errors.append(error)
                 let isComplete = errors.count == batches.count
                 guard isComplete else { return }
-                completion(errors)
+                completion(errors.compactMap { $0 })
             }
         }
     }

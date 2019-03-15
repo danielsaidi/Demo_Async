@@ -26,11 +26,11 @@ public extension SerialItemOperation {
         perform(at: 0, in: collection, errors: [], completion: completion)
     }
     
-    private func perform(at index: Int, in collection: [T], errors: [Error?], completion: @escaping Completion) {
+    private func perform(at index: Int, in collection: [T], errors: [Error], completion: @escaping Completion) {
         guard collection.count > index else { return completion(errors) }
         let object = collection[index]
         perform(onItem: object) { error in
-            let errors = errors + [error]
+            let errors = errors + [error].compactMap { $0 }
             self.perform(at: index + 1, in: collection, errors: errors, completion: completion)
         }
     }

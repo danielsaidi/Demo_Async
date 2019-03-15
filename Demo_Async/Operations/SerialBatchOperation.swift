@@ -27,11 +27,11 @@ public extension SerialBatchOperation {
         perform(at: 0, in: batches, errors: [], completion: completion)
     }
     
-    private func perform(at index: Int, in batches: [[T]], errors: [Error?], completion: @escaping Completion) {
+    private func perform(at index: Int, in batches: [[T]], errors: [Error], completion: @escaping Completion) {
         guard batches.count > index else { return completion(errors) }
         let batch = batches[index]
         perform(onBatch: batch) { error in
-            let errors = errors + [error]
+            let errors = errors + [error].compactMap { $0 }
             self.perform(at: index + 1, in: batches, errors: errors, completion: completion)
         }
     }

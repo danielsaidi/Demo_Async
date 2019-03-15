@@ -72,8 +72,8 @@ class ConcurrentOperationCoordinatorTests: QuickSpec {
                 operation2.error = error
                 var errors = [Error?]()
                 coordinator.perform(operations) { res in errors = res }
-                expect(errors[0]).to(beNil())
-                expect(errors[1]).to(be(error))
+                expect(errors.count).to(equal(1))
+                expect(errors[0]).to(be(error))
             }
         }
     }

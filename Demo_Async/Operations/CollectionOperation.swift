@@ -22,7 +22,7 @@ public protocol CollectionOperation: AnyObject {
     
     associatedtype CollectionType
     typealias T = CollectionType
-    typealias Completion = ([Error?]) -> ()
+    typealias Completion = ([Error]) -> ()
     
     func perform(on collection: [T], completion: @escaping Completion)
 }

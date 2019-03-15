@@ -50,11 +50,9 @@ class SerialItemOperationTests: QuickSpec {
                 obj.error = error
                 var errors = [Error?]()
                 obj.perform(on: [1, 2, 3, 4, 5]) { res in errors = res }
-                expect(errors[0]).to(beNil())
+                expect(errors.count).to(equal(2))
+                expect(errors[0]).to(be(error))
                 expect(errors[1]).to(be(error))
-                expect(errors[2]).to(beNil())
-                expect(errors[3]).to(be(error))
-                expect(errors[4]).to(beNil())
             }
         }
     }

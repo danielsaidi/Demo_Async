@@ -8,14 +8,14 @@
 
 import UIKit
 
-class DemoBatchOperation: DemoOperation, SerialBatchOperation {
+class DemoBatchOperation: DemoOperation, SerialCollectionBatchOperation {
     
     init(printer: Printer) {
         super.init(name: "Batch Operation", printer: printer)
     }
     
     var batchSize: Int = 2
-    typealias CollectionType = DemoItem
+    typealias OperationItemType = DemoItem
     
     func perform(onBatch batch: [DemoItem], completion: @escaping BatchCompletion) {
         perform { (error) in

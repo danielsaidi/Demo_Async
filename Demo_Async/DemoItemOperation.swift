@@ -8,13 +8,13 @@
 
 import Foundation
 
-class DemoItemOperation: DemoOperation, SerialItemOperation {
+class DemoItemOperation: DemoOperation, SerialCollectionItemOperation {
     
     init(printer: Printer) {
         super.init(name: "Item Operation", printer: printer)
     }
     
-    typealias CollectionType = DemoItem
+    typealias OperationItemType = DemoItem
     
     func perform(onItem item: DemoItem, completion: @escaping ItemCompletion) {
         perform { (error) in

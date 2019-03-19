@@ -13,7 +13,7 @@ extension ViewController {
     func performOperation_items() {
         let items = createItems(5)
         let operation = DemoItemOperation(printer: self)
-        operation.perform(on: items) { [weak self] errors in
+        operation.perform(onCollection: items) { [weak self] errors in
             let errors = errors.compactMap { $0 }
             self?.textView.text += "Finished with \(errors.count) errors"
         }

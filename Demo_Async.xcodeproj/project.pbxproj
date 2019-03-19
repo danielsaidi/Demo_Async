@@ -10,27 +10,30 @@
 		840B666B2210266800F282F2 /* DemoItemOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B666A2210266800F282F2 /* DemoItemOperation.swift */; };
 		840B666D221026C700F282F2 /* DemoBatchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B666C221026C700F282F2 /* DemoBatchOperation.swift */; };
 		840B667722117FA700F282F2 /* Printer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B667622117FA700F282F2 /* Printer.swift */; };
+		84876019224176AC0074A518 /* SerialCollectionBatchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487600D224176AA0074A518 /* SerialCollectionBatchOperation.swift */; };
+		8487601A224176AC0074A518 /* CollectionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487600E224176AA0074A518 /* CollectionOperation.swift */; };
+		8487601B224176AC0074A518 /* ItemOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487600F224176AA0074A518 /* ItemOperation.swift */; };
+		8487601C224176AC0074A518 /* BatchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84876010224176AA0074A518 /* BatchOperation.swift */; };
+		8487601D224176AC0074A518 /* SerialCollectionItemOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84876011224176AB0074A518 /* SerialCollectionItemOperation.swift */; };
+		8487601E224176AC0074A518 /* SerialOperationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84876012224176AB0074A518 /* SerialOperationCoordinator.swift */; };
+		8487601F224176AC0074A518 /* ConcurrentCollectionItemOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84876013224176AB0074A518 /* ConcurrentCollectionItemOperation.swift */; };
+		84876020224176AC0074A518 /* OperationItemTypeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84876014224176AB0074A518 /* OperationItemTypeProvider.swift */; };
+		84876021224176AC0074A518 /* ConcurrentOperationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84876015224176AB0074A518 /* ConcurrentOperationCoordinator.swift */; };
+		84876022224176AC0074A518 /* ConcurrentCollectionBatchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84876016224176AB0074A518 /* ConcurrentCollectionBatchOperation.swift */; };
+		84876023224176AC0074A518 /* OperationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84876017224176AB0074A518 /* OperationCoordinator.swift */; };
+		84876024224176AC0074A518 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84876018224176AB0074A518 /* Operation.swift */; };
+		8487602D224176C00074A518 /* ConcurrentCollectionItemOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84876025224176BF0074A518 /* ConcurrentCollectionItemOperationTests.swift */; };
+		8487602E224176C00074A518 /* SerialCollectionBatchOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84876026224176BF0074A518 /* SerialCollectionBatchOperationTests.swift */; };
+		8487602F224176C00074A518 /* SerialOperationCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84876027224176C00074A518 /* SerialOperationCoordinatorTests.swift */; };
+		84876030224176C00074A518 /* MockOperationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84876029224176C00074A518 /* MockOperationCoordinator.swift */; };
+		84876031224176C00074A518 /* SerialCollectionItemOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487602A224176C00074A518 /* SerialCollectionItemOperationTests.swift */; };
+		84876032224176C00074A518 /* ConcurrentCollectionBatchOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487602B224176C00074A518 /* ConcurrentCollectionBatchOperationTests.swift */; };
+		84876033224176C00074A518 /* ConcurrentOperationCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487602C224176C00074A518 /* ConcurrentOperationCoordinatorTests.swift */; };
 		84F7454C220AB236002B8A79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7454B220AB236002B8A79 /* AppDelegate.swift */; };
 		84F7454E220AB236002B8A79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7454D220AB236002B8A79 /* ViewController.swift */; };
 		84F74551220AB236002B8A79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F7454F220AB236002B8A79 /* Main.storyboard */; };
 		84F74553220AB237002B8A79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F74552220AB237002B8A79 /* Assets.xcassets */; };
 		84F74556220AB237002B8A79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F74554220AB237002B8A79 /* LaunchScreen.storyboard */; };
-		84F74577220AB285002B8A79 /* SerialItemOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7456C220AB284002B8A79 /* SerialItemOperation.swift */; };
-		84F74578220AB285002B8A79 /* ConcurrentOperationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7456D220AB284002B8A79 /* ConcurrentOperationCoordinator.swift */; };
-		84F74579220AB285002B8A79 /* CollectionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7456E220AB285002B8A79 /* CollectionOperation.swift */; };
-		84F7457A220AB285002B8A79 /* ConcurrentBatchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7456F220AB285002B8A79 /* ConcurrentBatchOperation.swift */; };
-		84F7457B220AB285002B8A79 /* SerialBatchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F74570220AB285002B8A79 /* SerialBatchOperation.swift */; };
-		84F7457D220AB285002B8A79 /* BatchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F74572220AB285002B8A79 /* BatchOperation.swift */; };
-		84F7457E220AB285002B8A79 /* ConcurrentItemOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F74573220AB285002B8A79 /* ConcurrentItemOperation.swift */; };
-		84F7457F220AB285002B8A79 /* ItemOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F74574220AB285002B8A79 /* ItemOperation.swift */; };
-		84F74580220AB285002B8A79 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F74575220AB285002B8A79 /* Operation.swift */; };
-		84F74581220AB285002B8A79 /* OperationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F74576220AB285002B8A79 /* OperationCoordinator.swift */; };
-		84F74585220AB2C4002B8A79 /* ConcurrentOperationCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F74582220AB2C3002B8A79 /* ConcurrentOperationCoordinatorTests.swift */; };
-		84F74586220AB2C4002B8A79 /* ConcurrentBatchOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F74583220AB2C3002B8A79 /* ConcurrentBatchOperationTests.swift */; };
-		84F74587220AB2C4002B8A79 /* ConcurrentItemOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F74584220AB2C4002B8A79 /* ConcurrentItemOperationTests.swift */; };
-		84F7458B220AB2CD002B8A79 /* SerialItemOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F74588220AB2CD002B8A79 /* SerialItemOperationTests.swift */; };
-		84F7458C220AB2CD002B8A79 /* SerialBatchOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F74589220AB2CD002B8A79 /* SerialBatchOperationTests.swift */; };
-		84F7458D220AB2CD002B8A79 /* SerialOperationCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7458A220AB2CD002B8A79 /* SerialOperationCoordinatorTests.swift */; };
 		84F74591220AB4DD002B8A79 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F7458F220AB4DD002B8A79 /* Nimble.framework */; };
 		84F74592220AB4DD002B8A79 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F74590220AB4DD002B8A79 /* Quick.framework */; };
 		84F74594220AB4F5002B8A79 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84F7458F220AB4DD002B8A79 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -42,7 +45,6 @@
 		84F745AF220D5033002B8A79 /* ViewController_3_batches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F745AE220D5032002B8A79 /* ViewController_3_batches.swift */; };
 		84F745B3220D50CE002B8A79 /* DemoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F745B2220D50CE002B8A79 /* DemoOperation.swift */; };
 		84F745B5220D5161002B8A79 /* DemoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F745B4220D5161002B8A79 /* DemoItem.swift */; };
-		84F745B7220D5224002B8A79 /* SerialOperationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F745B6220D5224002B8A79 /* SerialOperationCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,25 @@
 		840B666A2210266800F282F2 /* DemoItemOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoItemOperation.swift; sourceTree = "<group>"; };
 		840B666C221026C700F282F2 /* DemoBatchOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoBatchOperation.swift; sourceTree = "<group>"; };
 		840B667622117FA700F282F2 /* Printer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Printer.swift; sourceTree = "<group>"; };
+		8487600D224176AA0074A518 /* SerialCollectionBatchOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialCollectionBatchOperation.swift; sourceTree = "<group>"; };
+		8487600E224176AA0074A518 /* CollectionOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionOperation.swift; sourceTree = "<group>"; };
+		8487600F224176AA0074A518 /* ItemOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemOperation.swift; sourceTree = "<group>"; };
+		84876010224176AA0074A518 /* BatchOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatchOperation.swift; sourceTree = "<group>"; };
+		84876011224176AB0074A518 /* SerialCollectionItemOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialCollectionItemOperation.swift; sourceTree = "<group>"; };
+		84876012224176AB0074A518 /* SerialOperationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialOperationCoordinator.swift; sourceTree = "<group>"; };
+		84876013224176AB0074A518 /* ConcurrentCollectionItemOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentCollectionItemOperation.swift; sourceTree = "<group>"; };
+		84876014224176AB0074A518 /* OperationItemTypeProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationItemTypeProvider.swift; sourceTree = "<group>"; };
+		84876015224176AB0074A518 /* ConcurrentOperationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentOperationCoordinator.swift; sourceTree = "<group>"; };
+		84876016224176AB0074A518 /* ConcurrentCollectionBatchOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentCollectionBatchOperation.swift; sourceTree = "<group>"; };
+		84876017224176AB0074A518 /* OperationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationCoordinator.swift; sourceTree = "<group>"; };
+		84876018224176AB0074A518 /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		84876025224176BF0074A518 /* ConcurrentCollectionItemOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentCollectionItemOperationTests.swift; sourceTree = "<group>"; };
+		84876026224176BF0074A518 /* SerialCollectionBatchOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialCollectionBatchOperationTests.swift; sourceTree = "<group>"; };
+		84876027224176C00074A518 /* SerialOperationCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialOperationCoordinatorTests.swift; sourceTree = "<group>"; };
+		84876029224176C00074A518 /* MockOperationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockOperationCoordinator.swift; sourceTree = "<group>"; };
+		8487602A224176C00074A518 /* SerialCollectionItemOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialCollectionItemOperationTests.swift; sourceTree = "<group>"; };
+		8487602B224176C00074A518 /* ConcurrentCollectionBatchOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentCollectionBatchOperationTests.swift; sourceTree = "<group>"; };
+		8487602C224176C00074A518 /* ConcurrentOperationCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentOperationCoordinatorTests.swift; sourceTree = "<group>"; };
 		84F74548220AB236002B8A79 /* Demo_Async.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo_Async.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F7454B220AB236002B8A79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84F7454D220AB236002B8A79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,22 +103,6 @@
 		84F74557220AB237002B8A79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F7455C220AB237002B8A79 /* Demo_AsyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Demo_AsyncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F74562220AB237002B8A79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84F7456C220AB284002B8A79 /* SerialItemOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialItemOperation.swift; sourceTree = "<group>"; };
-		84F7456D220AB284002B8A79 /* ConcurrentOperationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentOperationCoordinator.swift; sourceTree = "<group>"; };
-		84F7456E220AB285002B8A79 /* CollectionOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionOperation.swift; sourceTree = "<group>"; };
-		84F7456F220AB285002B8A79 /* ConcurrentBatchOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentBatchOperation.swift; sourceTree = "<group>"; };
-		84F74570220AB285002B8A79 /* SerialBatchOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialBatchOperation.swift; sourceTree = "<group>"; };
-		84F74572220AB285002B8A79 /* BatchOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatchOperation.swift; sourceTree = "<group>"; };
-		84F74573220AB285002B8A79 /* ConcurrentItemOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentItemOperation.swift; sourceTree = "<group>"; };
-		84F74574220AB285002B8A79 /* ItemOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemOperation.swift; sourceTree = "<group>"; };
-		84F74575220AB285002B8A79 /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
-		84F74576220AB285002B8A79 /* OperationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationCoordinator.swift; sourceTree = "<group>"; };
-		84F74582220AB2C3002B8A79 /* ConcurrentOperationCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentOperationCoordinatorTests.swift; sourceTree = "<group>"; };
-		84F74583220AB2C3002B8A79 /* ConcurrentBatchOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentBatchOperationTests.swift; sourceTree = "<group>"; };
-		84F74584220AB2C4002B8A79 /* ConcurrentItemOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentItemOperationTests.swift; sourceTree = "<group>"; };
-		84F74588220AB2CD002B8A79 /* SerialItemOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialItemOperationTests.swift; sourceTree = "<group>"; };
-		84F74589220AB2CD002B8A79 /* SerialBatchOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialBatchOperationTests.swift; sourceTree = "<group>"; };
-		84F7458A220AB2CD002B8A79 /* SerialOperationCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialOperationCoordinatorTests.swift; sourceTree = "<group>"; };
 		84F7458F220AB4DD002B8A79 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		84F74590220AB4DD002B8A79 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		84F74599220AB56C002B8A79 /* Sequence+Batch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence+Batch.swift"; sourceTree = "<group>"; };
@@ -107,7 +112,6 @@
 		84F745AE220D5032002B8A79 /* ViewController_3_batches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_3_batches.swift; sourceTree = "<group>"; };
 		84F745B2220D50CE002B8A79 /* DemoOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoOperation.swift; sourceTree = "<group>"; };
 		84F745B4220D5161002B8A79 /* DemoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoItem.swift; sourceTree = "<group>"; };
-		84F745B6220D5224002B8A79 /* SerialOperationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialOperationCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84876028224176C00074A518 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				84876029224176C00074A518 /* MockOperationCoordinator.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		84F7453F220AB236002B8A79 = {
 			isa = PBXGroup;
 			children = (
@@ -181,17 +193,18 @@
 		84F7456B220AB24B002B8A79 /* Operations */ = {
 			isa = PBXGroup;
 			children = (
-				84F74572220AB285002B8A79 /* BatchOperation.swift */,
-				84F7456E220AB285002B8A79 /* CollectionOperation.swift */,
-				84F7456F220AB285002B8A79 /* ConcurrentBatchOperation.swift */,
-				84F74573220AB285002B8A79 /* ConcurrentItemOperation.swift */,
-				84F7456D220AB284002B8A79 /* ConcurrentOperationCoordinator.swift */,
-				84F74574220AB285002B8A79 /* ItemOperation.swift */,
-				84F74575220AB285002B8A79 /* Operation.swift */,
-				84F74576220AB285002B8A79 /* OperationCoordinator.swift */,
-				84F74570220AB285002B8A79 /* SerialBatchOperation.swift */,
-				84F7456C220AB284002B8A79 /* SerialItemOperation.swift */,
-				84F745B6220D5224002B8A79 /* SerialOperationCoordinator.swift */,
+				84876010224176AA0074A518 /* BatchOperation.swift */,
+				8487600E224176AA0074A518 /* CollectionOperation.swift */,
+				84876016224176AB0074A518 /* ConcurrentCollectionBatchOperation.swift */,
+				84876013224176AB0074A518 /* ConcurrentCollectionItemOperation.swift */,
+				84876015224176AB0074A518 /* ConcurrentOperationCoordinator.swift */,
+				8487600F224176AA0074A518 /* ItemOperation.swift */,
+				84876018224176AB0074A518 /* Operation.swift */,
+				84876017224176AB0074A518 /* OperationCoordinator.swift */,
+				84876014224176AB0074A518 /* OperationItemTypeProvider.swift */,
+				8487600D224176AA0074A518 /* SerialCollectionBatchOperation.swift */,
+				84876011224176AB0074A518 /* SerialCollectionItemOperation.swift */,
+				84876012224176AB0074A518 /* SerialOperationCoordinator.swift */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -216,12 +229,13 @@
 		84F7459C220AB580002B8A79 /* Operations */ = {
 			isa = PBXGroup;
 			children = (
-				84F74583220AB2C3002B8A79 /* ConcurrentBatchOperationTests.swift */,
-				84F74584220AB2C4002B8A79 /* ConcurrentItemOperationTests.swift */,
-				84F74582220AB2C3002B8A79 /* ConcurrentOperationCoordinatorTests.swift */,
-				84F74589220AB2CD002B8A79 /* SerialBatchOperationTests.swift */,
-				84F74588220AB2CD002B8A79 /* SerialItemOperationTests.swift */,
-				84F7458A220AB2CD002B8A79 /* SerialOperationCoordinatorTests.swift */,
+				8487602B224176C00074A518 /* ConcurrentCollectionBatchOperationTests.swift */,
+				84876025224176BF0074A518 /* ConcurrentCollectionItemOperationTests.swift */,
+				8487602C224176C00074A518 /* ConcurrentOperationCoordinatorTests.swift */,
+				84876028224176C00074A518 /* Mocks */,
+				84876026224176BF0074A518 /* SerialCollectionBatchOperationTests.swift */,
+				8487602A224176C00074A518 /* SerialCollectionItemOperationTests.swift */,
+				84876027224176C00074A518 /* SerialOperationCoordinatorTests.swift */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -348,28 +362,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84F74577220AB285002B8A79 /* SerialItemOperation.swift in Sources */,
 				84F7454E220AB236002B8A79 /* ViewController.swift in Sources */,
 				84F7454C220AB236002B8A79 /* AppDelegate.swift in Sources */,
+				8487601C224176AC0074A518 /* BatchOperation.swift in Sources */,
 				840B666D221026C700F282F2 /* DemoBatchOperation.swift in Sources */,
 				840B667722117FA700F282F2 /* Printer.swift in Sources */,
 				84F745AD220D4E27002B8A79 /* ViewController_2_items.swift in Sources */,
-				84F745B7220D5224002B8A79 /* SerialOperationCoordinator.swift in Sources */,
-				84F74579220AB285002B8A79 /* CollectionOperation.swift in Sources */,
-				84F74578220AB285002B8A79 /* ConcurrentOperationCoordinator.swift in Sources */,
-				84F7457B220AB285002B8A79 /* SerialBatchOperation.swift in Sources */,
 				84F745AB220D4CFE002B8A79 /* ViewController_1_coordinator.swift in Sources */,
+				84876021224176AC0074A518 /* ConcurrentOperationCoordinator.swift in Sources */,
+				84876024224176AC0074A518 /* Operation.swift in Sources */,
+				84876023224176AC0074A518 /* OperationCoordinator.swift in Sources */,
 				84F745B3220D50CE002B8A79 /* DemoOperation.swift in Sources */,
-				84F7457F220AB285002B8A79 /* ItemOperation.swift in Sources */,
-				84F7457E220AB285002B8A79 /* ConcurrentItemOperation.swift in Sources */,
+				84876020224176AC0074A518 /* OperationItemTypeProvider.swift in Sources */,
 				840B666B2210266800F282F2 /* DemoItemOperation.swift in Sources */,
+				8487601B224176AC0074A518 /* ItemOperation.swift in Sources */,
+				8487601E224176AC0074A518 /* SerialOperationCoordinator.swift in Sources */,
+				8487601D224176AC0074A518 /* SerialCollectionItemOperation.swift in Sources */,
+				8487601A224176AC0074A518 /* CollectionOperation.swift in Sources */,
 				84F745B5220D5161002B8A79 /* DemoItem.swift in Sources */,
+				84876022224176AC0074A518 /* ConcurrentCollectionBatchOperation.swift in Sources */,
 				84F745AF220D5033002B8A79 /* ViewController_3_batches.swift in Sources */,
-				84F7457A220AB285002B8A79 /* ConcurrentBatchOperation.swift in Sources */,
-				84F7457D220AB285002B8A79 /* BatchOperation.swift in Sources */,
-				84F74580220AB285002B8A79 /* Operation.swift in Sources */,
-				84F74581220AB285002B8A79 /* OperationCoordinator.swift in Sources */,
+				84876019224176AC0074A518 /* SerialCollectionBatchOperation.swift in Sources */,
 				84F7459A220AB56C002B8A79 /* Sequence+Batch.swift in Sources */,
+				8487601F224176AC0074A518 /* ConcurrentCollectionItemOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,13 +392,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84F74585220AB2C4002B8A79 /* ConcurrentOperationCoordinatorTests.swift in Sources */,
-				84F7458D220AB2CD002B8A79 /* SerialOperationCoordinatorTests.swift in Sources */,
-				84F7458B220AB2CD002B8A79 /* SerialItemOperationTests.swift in Sources */,
-				84F74586220AB2C4002B8A79 /* ConcurrentBatchOperationTests.swift in Sources */,
-				84F7458C220AB2CD002B8A79 /* SerialBatchOperationTests.swift in Sources */,
-				84F74587220AB2C4002B8A79 /* ConcurrentItemOperationTests.swift in Sources */,
+				84876030224176C00074A518 /* MockOperationCoordinator.swift in Sources */,
+				8487602F224176C00074A518 /* SerialOperationCoordinatorTests.swift in Sources */,
 				84F7459F220AB59E002B8A79 /* Sequence+BatchTests.swift in Sources */,
+				8487602E224176C00074A518 /* SerialCollectionBatchOperationTests.swift in Sources */,
+				84876031224176C00074A518 /* SerialCollectionItemOperationTests.swift in Sources */,
+				8487602D224176C00074A518 /* ConcurrentCollectionItemOperationTests.swift in Sources */,
+				84876032224176C00074A518 /* ConcurrentCollectionBatchOperationTests.swift in Sources */,
+				84876033224176C00074A518 /* ConcurrentOperationCoordinatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

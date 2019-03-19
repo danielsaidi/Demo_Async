@@ -1,33 +1,18 @@
-//
-//  BatchOperation.swift
-//  Demo_Async
-//
-//  Created by Daniel Saidi on 2019-01-26.
-//  Copyright © 2019 Daniel Saidi. All rights reserved.
-//
-
 /*
  
- This protocol can be implemented by classes that perform an
- operation on batches of items from a typed collection.
+ A batch operation can be performed on batches of items of a
+ certain type.
  
- When you implement this protocol, just implement everything
- that is required by `CollectionOperation` and implement the
- `perform(onBatch:completion:)` function as well.
- 
- It's important to call the batch completion when each batch
- is processes, since operations may rely on it completion to
- coordinate their executions.
+ When implementing this protocol, specify `OperationItemType`
+ by creating a typealias in your implementation.
  
  */
 
 import Foundation
 
-public protocol BatchOperation: CollectionOperation {
+public protocol BatchOperation: OperationItemTypeProvider {
     
     typealias BatchCompletion = (Error?) -> ()
     
-    var batchSize: Int { get }
-    
-    func perform(onBatch batch: [T], completion: @escaping BatchCompletion)
+    func perform(onBatch batch: [OperationItemType], completion: @escaping BatchCompletion)
 }

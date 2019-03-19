@@ -1,11 +1,3 @@
-//
-//  ConcurrentOperationCoordinatorTests.swift
-//  Demo_AsyncTests
-//
-//  Created by Daniel Saidi on 2019-01-29.
-//  Copyright © 2019 Daniel Saidi. All rights reserved.
-//
-
 import Quick
 import Nimble
 import Demo_Async
@@ -95,7 +87,7 @@ private class TestOperation: Demo_Async.Operation {
     private var counter: TestCounter
     private var performCompletion: Bool
     
-    func perform(completion: @escaping Completion) {
+    func perform(completion: @escaping OperationCompletion) {
         counter.count += 1
         guard performCompletion else { return }
         completion(error)

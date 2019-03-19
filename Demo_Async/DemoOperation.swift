@@ -18,7 +18,7 @@ class DemoOperation: Operation {
     private var name: String
     private weak var printer: Printer?
     
-    func perform(completion: @escaping Completion) {
+    func perform(completion: @escaping OperationCompletion) {
         printer?.print("Performing \(name)")
         DispatchQueue.global(qos: .background).async {
             usleep(UInt32.random(in: 800_000...1_200_000))
